@@ -1,0 +1,31 @@
+body{
+  display: grid;
+  place-content: center;
+}
+.cb{
+  display: flex;
+  
+}
+.cb input{
+  opacity: 0;
+}
+.checkbox{
+  height: 1em;
+  width: 1em;
+  border: 1px solid grey;
+  margin: 0 10px;
+  display: grid;
+  place-content: center;
+  padding: 1px;
+}
+.checkbox:before{
+  content: ''
+}
+.cb input:checked + .checkbox{
+  background-color: deepskyblue;
+  color: white;
+}
+.cb input:checked + .checkbox:before{
+  content: '\2714'
+}
+
