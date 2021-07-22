@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.slide-container{
+     margin: auto;
+     max-width: 1000px;
+     padding: 0;
+    }
+    .slide{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+    
+
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: rgb(28, 0, 128);
+}
+.pink{
+    background-color: palevioletred;
+}
+
+
+
+/**/
+
+.fade{
+    -webkit-animation-name:fade ;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+@-webkit-keyframes
+fade{
+    from{opacity: .4;}
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade{
+    from{opacity: .4;}
+    to{
+        opacity: 1;
+    }
+
+}
+
+
+
+/**/
+
+.expand{
+    -webkit-animation-name:expand ;
+    -webkit-animation-duration: 1.5s;
+    animation-name: expand;
+    animation-duration: 1.5s;
+
+}
+@-webkit-keyframes
+expand{
+    from{width: 0%;}
+    to{
+        width: 100%;
+    }
+}
+
+
+@keyframes expand{
+    from{width: 0%;}
+    to{
+        width: 100%;
+    }
+
+}
+
+
+/**/
+
+.zoom{
+    -webkit-animation-name:zoom ;
+    -webkit-animation-duration: 1.5s;
+    animation-name: zoom;
+    animation-duration: 1.5s;
+
+}
+@-webkit-keyframes
+zoom{
+    from{transform: scale(0);}
+    to{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{
+        transform: scale(1);
+    }
+
+}
+
