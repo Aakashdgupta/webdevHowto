@@ -1,0 +1,72 @@
+    
+    *{
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	
+    }
+    
+       .container{
+        max-width: 1000px;
+        background-color: whitesmoke;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container #click{
+        width: 60%;
+        height: 50px;
+        background-color: coral;
+        display: flex;
+     
+    }
+    #click p{
+    	margin:  auto;
+    	color: white;
+    }
+
+    .modal{
+        position: absolute;
+        left: 0;
+        top: -200px;
+        width: 100vw;
+        background: transparent;
+        height: 100vh;
+        display: none;
+        animation-name: animatetop;
+        animation-duration: 1s;
+
+
+    }
+     .modal-content{
+    	  margin: auto;
+        background-color:white;
+        width: 80%;
+        height: 30%;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        display: grid;
+        grid-template-columns: 1fr;
+   
+
+    }
+    .modal-content h3{
+    	margin: auto;
+    	font-size: 13px;
+    	color:black;
+    }
+
+    @keyframes animatetop{
+        from{
+            top: -300px;
+            opacity: 0;
+        }
+        to{
+            top: -200px;
+            opacity: 1;
+        }
+
+    
+    }
